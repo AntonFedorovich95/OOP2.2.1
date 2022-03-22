@@ -1,6 +1,6 @@
 package ru.skypro;
 
-public class  Hufflepuff extends hogwarts {
+public class Hufflepuff extends Hogwarts {
     private int Diligence;
     private int Loyalty;
     private int Honesty;
@@ -36,12 +36,22 @@ public class  Hufflepuff extends hogwarts {
         Honesty = honesty;
     }
 
+    public void comparisonOfPropertiesHufflepuff(Hufflepuff student) {
+        if (this.getHonesty() > student.getHonesty()) {
+            System.out.println(this.getName() + " честнее чем " + student.getName());
+        } else if (this.getHonesty() == student.getHonesty()) {
+            System.out.println("Студенты честны одинаково!");
+        } else {
+            System.out.println(student.getName() + " честнее чем " + this.getName());
+        }
+    }
+
     @Override
     public String toString() {
-        return super.toString() + "Hufflepuff{" +
-                "Diligence=" + Diligence +
-                ", Loyalty=" + Loyalty +
-                ", Honesty=" + Honesty +
-                "} ";
+        return super.toString() + " Факультет Пуффендуй! " +
+                "Трудолюбие: " + Diligence +
+                ", Верность: " + Loyalty +
+                ", Честность: " + Honesty +
+                ".";
     }
 }

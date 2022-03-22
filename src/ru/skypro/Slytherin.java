@@ -1,6 +1,6 @@
 package ru.skypro;
 
-public class Slytherin extends hogwarts {
+public class Slytherin extends Hogwarts {
     private int cunning;
     private int determination;
     private int ambition;
@@ -56,15 +56,24 @@ public class Slytherin extends hogwarts {
         this.thirstForPower = thirstForPower;
     }
 
+    public void comparisonOfPropertiesSlytserin(Slytherin student) {
+        if (this.getCunning() > student.getCunning()) {
+            System.out.println(this.getName() + " хитрее чем " + student.getName());
+        } else if (this.getCunning() == student.getCunning()) {
+            System.out.println("Студенты хитры одинаково!");
+        } else {
+            System.out.println(student.getName() + " хитрее чем " + this.getName());
+        }
+    }
+
     @Override
     public String toString() {
-        return super.toString() + "Slytherin{" +
-                "cunning=" + cunning +
-                ", determination=" + determination +
-                ", ambition=" + ambition +
-                ", resourcefulness=" + resourcefulness +
-                ", thirstForPower=" + thirstForPower +
-                "} ";
+        return super.toString() + " Факультет Слизерин! " +
+                "Хитрость: " + cunning +
+                ", Решительность: " + determination +
+                ", Амбициозность: " + ambition +
+                ", Находчивост: " + resourcefulness +
+                ", Жажда власти: " + thirstForPower +
+                ".";
     }
 }
-
