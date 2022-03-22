@@ -56,6 +56,7 @@ public class Ravenclaw extends Hogwarts {
         }
     }
 
+
     @Override
     public String toString() {
         return super.toString() + " Факультет Когтевран! " +

@@ -35,6 +35,7 @@ public abstract class Hogwarts {
         this.theDistanceOfTransgression = theDistanceOfTransgression;
     }
 
+
     public void comparisonOfProperties( Hogwarts student) {
         if ((this.getThePowerOfMagic() + this.getTheDistanceOfTransgression()) > (student.getThePowerOfMagic() + student.getTheDistanceOfTransgression())) {
             System.out.println(this.getName() + " сила магии мощнее чем у " + student.getName());

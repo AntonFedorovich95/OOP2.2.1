@@ -47,6 +47,7 @@ public class Gryffindor extends Hogwarts {
         }
     }
 
+
     @Override
     public String toString() {
         return super.toString() + " Факультет Гриффендор!" +

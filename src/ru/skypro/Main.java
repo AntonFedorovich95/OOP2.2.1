@@ -26,7 +26,7 @@ public class Main {
                 new Ravenclaw("Падма Патил", 66, 52, 46, 59, 43, 67),
                 new Ravenclaw("Маркус Белби", 43, 50, 50, 67, 43, 59),
         };
-        Ravenclaw[1].comparisonOfPropertiesRavenclaw(Ravenclaw[0]);
+        Ravenclaw[1].comparisonOfPropertiesRavenclaw(Ravenclaw[2]);
         Slytherin[0].comparisonOfPropertiesSlytserin(Slytherin[2]);
         Hufflepuff[1].comparisonOfPropertiesHufflepuff(Hufflepuff[2]);
         Gryffindor[0].comparisonOfPropertiesGryffindor(Gryffindor[2]);
