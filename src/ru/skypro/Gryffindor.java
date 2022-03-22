@@ -1,6 +1,6 @@
 package ru.skypro;
 
-public class Gryffindor extends hogwarts {
+public class Gryffindor extends Hogwarts {
     public static int length;
     private int nobility;
     private int honor;
@@ -37,12 +37,22 @@ public class Gryffindor extends hogwarts {
         this.bravery = bravery;
     }
 
+    public void comparisonOfPropertiesGryffindor(Gryffindor student) {
+        if (this.getBravery() > student.getBravery()) {
+            System.out.println(this.getName() + " благороднее чем " + student.getName());
+        } else if (this.getBravery() == student.getBravery()) {
+            System.out.println("Студенты благородны одинаково!");
+        } else {
+            System.out.println(student.getName() + " благороднее чем " + this.getName());
+        }
+    }
+
     @Override
     public String toString() {
-        return super.toString() +  " Gryffindor{" +
-                "nobility=" + nobility +
-                ", honor=" + honor +
-                ", bravery=" + bravery +
-                "} " ;
+        return super.toString() + " Факультет Гриффендор!" +
+                " Благородство: " + nobility +
+                ", Честь: " + honor +
+                ", Храбрость: " + bravery + ".";
     }
+
 }
