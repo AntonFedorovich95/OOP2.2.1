@@ -1,35 +1,6 @@
 package ru.skypro;
 
 public class Main {
-    public static void comparisonOfPropertiesSlytserin(Slytherin[] Slytherin) {
-        int student1 = Slytherin[0].getAmbition();
-        int student2 = Slytherin[2].getAmbition();
-        if (student1 > student2) {
-            System.out.println(Slytherin[0].getName() + " амбициознее чем " + Slytherin[2].getName());
-        } else {
-            System.out.println(Slytherin[2].getName() + " амбициознее чем " + Slytherin[0].getName());
-        }
-    }
-
-    public static void comparisonOfPropertiesHufflepuff(Hufflepuff[] Hufflepuff) {
-        int student1 = Hufflepuff[0].getHonesty();
-        int student2 = Hufflepuff[1].getHonesty();
-        if (student1 > student2) {
-            System.out.println(Hufflepuff[0].getName() + " честнее чем " + Hufflepuff[1].getName());
-        } else {
-            System.out.println(Hufflepuff[1].getName() + " честнее чем " + Hufflepuff[0].getName());
-        }
-    }
-
-    public static void comparisonOfPropertiesRavenclaw(Ravenclaw[] Ravenclaw) {
-        int student1 = Ravenclaw[1].getSmart();
-        int student2 = Ravenclaw[2].getSmart();
-        if (student1 > student2) {
-            System.out.println(Ravenclaw[1].getName() + " умнее чем " + Ravenclaw[2].getName());
-        } else {
-            System.out.println(Ravenclaw[2].getName() + " умнее чем " + Ravenclaw[1].getName());
-        }
-    }
 
     public static void main(String[] args) {
         Gryffindor[] Gryffindor = {
